@@ -2,6 +2,8 @@
 
 A system where the user inputs a research topic and 4 autonomous AI agents collaborate to produce a structured, well-researched report automatically.
 
+**Live demo:** https://multi-agent-research-gx9treosmqhghpuks2zvzp.streamlit.app/ *(password required — contact for access)*
+
 ![Demo Screenshot](assets/demo.jpeg)
 
 ---
