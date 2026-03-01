@@ -1,4 +1,5 @@
-# Multi-Agent Research & Report Generator
+# Multi-Agent AI System
+# Autonomous Research & Report Generation Agent
 
 A system where the user inputs a research topic and 4 autonomous AI agents collaborate to produce a structured, well-researched report automatically.
 
