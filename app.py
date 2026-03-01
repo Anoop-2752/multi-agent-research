@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-# ── Password gate ─────────────────────────────────────────────────────────────
+# ── Password gate ──────
 
 pwd = st.text_input("Enter password to access the app", type="password")
 if pwd != st.secrets.get("APP_PASSWORD", ""):
