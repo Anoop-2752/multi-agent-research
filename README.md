@@ -4,8 +4,7 @@ Give it a topic, get back a structured research report. Four AI agents handle th
 
 Built this as a portfolio project to get hands-on with LangGraph and multi-agent orchestration. Ended up being a pretty useful tool on its own.
 
-![Demo Screenshot](assets/demo.png)
-> *Add a screenshot of the running UI here*
+![Demo Screenshot](assets/demo.jpeg)
 
 ---
 
