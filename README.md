@@ -1,8 +1,6 @@
 # Multi-Agent Research & Report Generator
 
-Give it a topic, get back a structured research report. Four AI agents handle the whole thing — planning, searching, writing, and reviewing — without you having to babysit any of it.
-
-Built this as a portfolio project to get hands-on with LangGraph and multi-agent orchestration. Ended up being a pretty useful tool on its own.
+A system where the user inputs a research topic and 4 autonomous AI agents collaborate to produce a structured, well-researched report automatically.
 
 ![Demo Screenshot](assets/demo.jpeg)
 
