@@ -28,6 +28,14 @@ def _strip_inline_markdown(text: str) -> str:
     text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
     text = re.sub(r"\*(.+?)\*",     r"\1", text)
     text = re.sub(r"`(.+?)`",       r"\1", text)
+    # Replace common Unicode symbols that Helvetica doesn't support
+    replacements = {"•": "-", "✓": "-", "✗": "x", "→": "->", "←": "<-",
+                    "–": "-", "—": "-", "\u2019": "'", "\u2018": "'",
+                    "\u201c": '"', "\u201d": '"'}
+    for char, sub in replacements.items():
+        text = text.replace(char, sub)
+    # Drop anything still outside latin-1 range
+    text = text.encode("latin-1", errors="ignore").decode("latin-1")
     return text.strip()
 
 
@@ -84,7 +92,7 @@ def generate_pdf(report_markdown: str, topic: str) -> bytes:
             pdf.set_font("Helvetica", "", 10)
             pdf.set_text_color(30, 30, 30)
             pdf.set_x(25)
-            pdf.cell(5, 6, "•")
+            pdf.cell(5, 6, "-")
             pdf.set_x(30)
             pdf.multi_cell(0, 6, text)
 
